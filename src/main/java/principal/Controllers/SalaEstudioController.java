@@ -1,5 +1,12 @@
 package principal.Controllers;
 
+/*
+Autor: Alberto López García
+Licencia:
+Creative commons CC BY-SA 4.0 
+https://creativecommons.org/licenses/by-sa/4.0/deed.es
+*/
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

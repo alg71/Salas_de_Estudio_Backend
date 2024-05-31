@@ -1,5 +1,12 @@
 package principal.dominio;
 
+/*
+Autor: Alberto López García
+Licencia:
+Creative commons CC BY-SA 4.0 
+https://creativecommons.org/licenses/by-sa/4.0/deed.es
+*/
+
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
