@@ -5,13 +5,14 @@ Autor: Alberto López García
 Licencia:
 Creative commons CC BY-SA 4.0 
 https://creativecommons.org/licenses/by-sa/4.0/deed.es
-*/
-
+ */
+import java.awt.List;
 import principal.data.SalaEstudioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import principal.dominio.SalaEstudio;
 
 @SpringBootApplication
 public class SalasEstudioApplication implements CommandLineRunner {
@@ -32,17 +33,10 @@ public class SalasEstudioApplication implements CommandLineRunner {
 
         /*Las salas se crean manualmente en la base de datos ya que solo se trata de una suimulación.
         También podrían crearse de la siguiente manera comentada:
-        
         SalaEstudio salaEstudio = new SalaEstudio(50);
         // Guardar            
         salaEstudioRepository.save(salaEstudio);
         System.out.println("Sala guardada en base de datos");
-
-        List<SalaEstudio> aforoActual = salaEstudioRepository.findAll();
-
-        for (SalaEstudio salaEstudio : aforoActual) {
-            System.out.println(salaEstudio);
-        }
 
         System.out.println("");*/
     }
