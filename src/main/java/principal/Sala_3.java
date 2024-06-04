@@ -17,8 +17,8 @@ import org.springframework.boot.SpringApplication;
 
 public class Sala_3 extends JFrame {
 
-    private ModeloSalaEstudio modeloSalaEstudio;    
-    private JLabel labelAforo;
+    private final ModeloSalaEstudio modeloSalaEstudio;    
+    
 
     public Sala_3(SalaEstudioRepository salaEstudioRepository) {
         this.modeloSalaEstudio = new ModeloSalaEstudio(salaEstudioRepository);              
@@ -56,11 +56,12 @@ public class Sala_3 extends JFrame {
     }
 
     public static void main(String[] args) {
+        
         // Inicializar la aplicación Swing
         SwingUtilities.invokeLater(new Runnable() {
+            
             @Override
-            public void run() {
-                
+            public void run() {                
                 SalaEstudioRepository salaEstudioRepository = SpringApplication.run(SalasEstudioApplication.class, args)
                         .getBean(SalaEstudioRepository.class);
                 new Sala_3(salaEstudioRepository).setVisible(true);

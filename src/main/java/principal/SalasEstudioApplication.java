@@ -6,13 +6,11 @@ Licencia:
 Creative commons CC BY-SA 4.0 
 https://creativecommons.org/licenses/by-sa/4.0/deed.es
  */
-import java.awt.List;
 import principal.data.SalaEstudioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import principal.dominio.SalaEstudio;
 
 @SpringBootApplication
 public class SalasEstudioApplication implements CommandLineRunner {
