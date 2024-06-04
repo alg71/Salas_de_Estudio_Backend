@@ -12,12 +12,12 @@ import org.springframework.stereotype.Repository;
 import principal.dominio.SalaEstudio;
 
 @Repository
-public class ModeloSalaEstudio {
+public class SalaEstudioModelo {
 
     private final SalaEstudioRepository salaEstudioRepository;
 
     @Autowired
-    public ModeloSalaEstudio(SalaEstudioRepository salaEstudioRepository) {
+    public SalaEstudioModelo(SalaEstudioRepository salaEstudioRepository) {
         this.salaEstudioRepository = salaEstudioRepository;
     }
 

@@ -7,7 +7,7 @@ Creative commons CC BY-SA 4.0
 https://creativecommons.org/licenses/by-sa/4.0/deed.es
  */
 import principal.data.SalaEstudioRepository;
-import principal.data.ModeloSalaEstudio;
+import principal.data.SalaEstudioModelo;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,10 +16,10 @@ import org.springframework.boot.SpringApplication;
 
 public class Sala_1 extends JFrame {
 
-    private final ModeloSalaEstudio modeloSalaEstudio;
+    private final SalaEstudioModelo modeloSalaEstudio;
 
     public Sala_1(SalaEstudioRepository salaEstudioRepository) {
-        this.modeloSalaEstudio = new ModeloSalaEstudio(salaEstudioRepository);
+        this.modeloSalaEstudio = new SalaEstudioModelo(salaEstudioRepository);
         initComponents();
         setLocationRelativeTo(null); // Centrar la ventana en la pantalla
     }
