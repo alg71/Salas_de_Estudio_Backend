@@ -5,8 +5,7 @@ Autor: Alberto López García
 Licencia:
 Creative commons CC BY-SA 4.0 
 https://creativecommons.org/licenses/by-sa/4.0/deed.es
-*/
-
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,20 +24,14 @@ public class SalaEstudioController {
 
     @GetMapping("/{id}/aforo")
     public ResponseEntity<Integer> obtenerAforoSala(@PathVariable Integer id) {
-       
-        
-        
+
         SalaEstudio sala = salaEstudioRepository.findById(id).orElse(null);
-        
-        
+
         if (sala != null) {
             int aforo = sala.getAforoActual();
-            int aforoTotal = sala.getAforoActual();
 
             if (aforo <= 0) {
-                return ResponseEntity.badRequest().body(null); // Aforo negativo
-            } else if (aforo > aforoTotal) {
-                return ResponseEntity.badRequest().body(null); // Aforo excedido
+                return ResponseEntity.badRequest().body(null); // Aforo negativo           
             } else {
                 return ResponseEntity.ok(aforo); // Aforo válido
             }
