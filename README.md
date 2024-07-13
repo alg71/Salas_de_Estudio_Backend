@@ -7,5 +7,5 @@ Este dato se proporciona a través de una API RestFull.
 
 "## Instalación"
 Descargar  y abrir proyecto en cualquier IDE.
-Ejecutar proyecto tanto desde la clase principal como desde cualquier clase SALA ya que se ejecuta también la aplicación principal junto con las venjtanas/interfaces Swing.
+Ejecutar proyecto tanto desde la clase principal como desde cualquier clase SALA ya que se ejecuta también la aplicación principal junto con las ventanas/interfaces Swing.
 
